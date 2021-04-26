@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* Login */
+.outter-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(88, 2, 168);
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/ecommerce-illustration2-3.gif);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.inner {
+  position: absolute;
+}
+.inner-container {
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  top: calc(50vh - 220px);
+  left: calc(80vw - 155px);
+  overflow: hidden;
+}
+.box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica;
+  color: #fff;
+  background: rgba(14, 14, 16, 0.9);
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+.box h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 20px;
+}
+.box .title {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: goldenrod;
+}
+.box input {
+  display: block;
+  width: 330px;
+  height: 50px;
+  margin: 20px auto;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+.box .form-control {
+  display: block;
+  width: 330px;
+  height: 100px;
+  margin: 20px auto;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}
+.box input:focus,
+.box input:active,
+.box button:focus,
+.box button:active {
+  outline: none;
+}
+.box button {
+  background: rgb(180, 138, 0);
+  border: 0;
+  height: 50px;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  width: 330px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.box button:active {
+  background: rgb(155, 119, 1);
+}
+.box p {
+  font-size: 14px;
+  text-align: center;
+}
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+}
+.nav-left img {
+  width: 100px;
+  margin-right: 10px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  margin-right: 60px;
+  font-size: 17px;
+}
+.nav-right li {
+  list-style: none;
+  margin-right: 10px;
+}
+.nav-right li a {
+  position: relative;
+  display: inline-block;
+  color: rgb(226, 173, 0);
+  font-weight: 600;
+  margin-left: 60px;
+  padding: 10px 0;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.nav-right li a::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: tomato;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+.nav-right li a:hover::after {
+  width: 100%;
+}
+.sub-product {
+  display: none;
+  padding: 10px 0;
+}
+.nav-right ul li:hover .sub-product {
+  width: 220px;
+  display: block;
+  position: absolute;
+  margin-left: 15px;
+  background-color: rgba(14, 14, 16, 0.9);
+  z-index: 9999;
+}
+/* Homepage */
+.home-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://www.uplarn.com/wp-content/uploads/2017/02/ecommece.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.content {
+  text-align: center;
+  margin-top: 150px;
+}
+.container .content h2 {
+  font-size: 3em;
+  color: #fff;
+  font-weight: 700;
+}
+.container .content span {
+  color: goldenrod;
+}
+.container .content p {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 400;
+}
+.bi {
+  margin-right: 5px;
+}
+.bi:hover {
+  color: goldenrod;
+  cursor: pointer;
+}
+.product-title {
+  font-size: 1.25rem;
+  height: 50px;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
